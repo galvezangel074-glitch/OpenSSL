@@ -117,6 +117,8 @@ Aplicar la extensión **OpenSSL** y la librería **Libsodium** en PHP para prote
 | [`firmaDigital.php`](firmaDigital.php) | Complementario: RSA-OAEP con llaves exportadas a archivo |
 | [`includes/`](includes) | `bootstrap.php` (config común, `openssl.cnf`, CSRF, XSS), `header.php`, `footer.php` |
 | [`assets/style.css`](assets/style.css) | Estilos de los formularios |
+| [`Informe_Laboratorio_OpenSSL.pdf`](Informe_Laboratorio_OpenSSL.pdf) | **Informe técnico final en PDF** (portada, capturas con descripciones, tablas de funciones, Libsodium, conclusiones) |
+| [`docs/informe/build.js`](docs/informe/build.js) | Script que genera el informe PDF (`node docs/informe/build.js`) |
 | [`originales/`](originales) | Scripts entregados por la docente, sin modificar, como referencia |
 | [`capturas/`](capturas) | Evidencias de ejecución (34 imágenes) |
 | [`herramientas/`](herramientas) | `capturas.js` (genera las capturas con Edge) y `prueba.sh` (prueba funcional de los formularios con `curl`) |
@@ -292,7 +294,7 @@ CBC solo da confidencialidad; **GCM** añade un *tag* de autenticación, así qu
 | Hash genérico | BLAKE2b | `sodium_crypto_generichash` |
 
 **Ventajas de seguridad:** funciones resistentes al mal uso, tiempo constante frente a ataques de canal lateral, Argon2id contra fuerza bruta con GPU y llaves cortas (32 bytes) con seguridad equivalente a RSA mucho más largo.
-**Ventajas de rendimiento:** las curvas elípticas y ChaCha/Salsa son más rápidas que RSA-2048 en generación de llaves y firma (ver captura 32).
+**Ventajas de rendimiento:** Ed25519 es mucho más rápido que RSA-2048 al generar llaves (0.064 ms vs 58.020 ms) y al firmar (0.079 ms vs 0.440 ms); en cambio, AES-256-GCM de OpenSSL cifra 1 MB más rápido que `secretbox` (0.201 ms vs 1.689 ms) porque el procesador lo acelera por hardware (ver captura 32).
 
 ### 6.2 OpenSSL vs. Libsodium
 
