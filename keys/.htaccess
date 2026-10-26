@@ -1,0 +1,2 @@
+# Las llaves privadas nunca deben ser accesibles desde el navegador (OWASP A02)
+Require all denied

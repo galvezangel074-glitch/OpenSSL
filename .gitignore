@@ -1,0 +1,6 @@
+# Llaves y firmas generadas en tiempo de ejecucion: nunca subir llaves privadas al repositorio
+keys/*
+!keys/.htaccess
+keysCert/*
+!keysCert/.htaccess
+herramientas/node_modules/

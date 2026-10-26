@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: #222;
+    margin: 0;
+}
+
+a { color: #1a5fb4; }
+
+.barra {
+    background: #1a5fb4;
+    color: #fff;
+    padding: 10px 20px;
+}
+.barra small { color: #dbe7f7; }
+.barra nav a { color: #fff; margin-right: 12px; }
+.barra nav a.activo { font-weight: bold; text-decoration: none; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 10px 20px; }
+
+.tarjeta {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin: 12px 0;
+}
+.tarjeta.info { background: #e8f0fb; }
+
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.rejilla .tarjeta { margin: 0; }
+.dos-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+button { background: #1a5fb4; color: #fff; border: 0; padding: 6px 14px; cursor: pointer; }
+
+.alerta.ok, .etiqueta.ok { background: #d9f2e0; color: #145a2b; }
+.alerta.error, .etiqueta.error { background: #f9dcdc; color: #8a1c1c; }
+.alerta.aviso { background: #fff3cd; color: #6b5200; }
+.alerta { padding: 8px 12px; margin: 10px 0; }
+
+pre { background: #222; color: #eee; padding: 8px; white-space: pre-wrap; word-break: break-all; }
+
+.pie { text-align: center; color: #666; padding: 14px; }
