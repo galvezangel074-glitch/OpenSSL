@@ -117,8 +117,6 @@ Aplicar la extensión **OpenSSL** y la librería **Libsodium** en PHP para prote
 | [`firmaDigital.php`](firmaDigital.php) | Complementario: RSA-OAEP con llaves exportadas a archivo |
 | [`includes/`](includes) | `bootstrap.php` (config común, `openssl.cnf`, CSRF, XSS), `header.php`, `footer.php` |
 | [`assets/style.css`](assets/style.css) | Estilos de los formularios |
-| [`Informe_Laboratorio_OpenSSL.pdf`](Informe_Laboratorio_OpenSSL.pdf) | **Informe técnico final en PDF** (portada, capturas con descripciones, tablas de funciones, Libsodium, conclusiones) |
-| [`docs/informe/build.js`](docs/informe/build.js) | Script que genera el informe PDF (`node docs/informe/build.js`) |
 | [`originales/`](originales) | Scripts entregados por la docente, sin modificar, como referencia |
 | [`capturas/`](capturas) | Evidencias de ejecución (34 imágenes) |
 | [`herramientas/`](herramientas) | `capturas.js` (genera las capturas con Edge) y `prueba.sh` (prueba funcional de los formularios con `curl`) |
